@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "UserLand";
+}
+
+<h2>@ViewBag.Status</h2>
+
+
+@if (ViewBag.Index == 1)
+{
+    @Html.ActionLink("Register a new User", "Registration")
+}
+@if (ViewBag.Index == 3)
+{
+    @Html.ActionLink("try again", "UserLogin")
+}
+@if (ViewBag.Index == 2)
+{
+    @Html.ActionLink("You can register here", "Registration")
+}
